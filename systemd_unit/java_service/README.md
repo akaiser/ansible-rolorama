@@ -4,6 +4,7 @@
 # Example use
 dependencies:
   - role: java_service
+    tags: systemd_service
     vars:
       java_service_name: 'awesome-java-app'
       java_service_description: 'Awesome Java App as a service'
