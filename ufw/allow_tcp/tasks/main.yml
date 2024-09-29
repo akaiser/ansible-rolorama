@@ -5,7 +5,7 @@
     rule: allow
     port: '{{ item }}'
     proto: tcp
-  loop: '{{ allowed_tcp_ports }}'
+  loop: '{{ __allowed_tcp_ports }}'
 
 - name: Enable ufw
   community.general.ufw:

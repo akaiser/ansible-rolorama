@@ -1,3 +1,3 @@
 # ansible-rolorama
 
-A collection of roles I integrate into my playbooks using symbolic links.
+A collection of roles to integrate into playbooks using symbolic links.

@@ -3,7 +3,7 @@
 - name: Create systemd service
   ansible.builtin.template:
     src: java.service.j2
-    dest: '/etc/systemd/system/{{ java_service_name }}.service'
+    dest: '/etc/systemd/system/{{ __java_service_name }}.service'
     owner: root
     group: root
     mode: '0755'
