@@ -5,7 +5,7 @@
 dependencies:
   - role: allow_tcp
     vars:
-      __allowed_tcp_ports:
+      __allow_tcp_ports:
         - 22
         - 80
         - 443
