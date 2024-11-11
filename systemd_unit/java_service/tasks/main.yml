@@ -8,7 +8,7 @@
     group: root
     mode: '0755'
 
-- name: Run daemon-reload and autostart on boot
+- name: Set autostart on boot and run daemon-reload
   ansible.builtin.systemd_service:
     name: '{{ __java_service_name }}.service'
     daemon_reload: true
