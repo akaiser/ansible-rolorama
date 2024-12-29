@@ -1,0 +1,11 @@
+---
+
+- name: Include secrets
+  ansible.builtin.include_vars: github-secrets.yml
+
+- name: Checkout
+  ansible.builtin.git:
+    repo: '{{ __checkout_repo }}'
+    dest: '{{ __checkout_dest }}'
+    version: main
+    depth: 1
